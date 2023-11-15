@@ -1,0 +1,44 @@
+@font-face {
+    font-family: letterb;
+    src: url(../font/Graphik\ Web\ Semibold\ Regular.ttf);
+}
+
+
+.app {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #14181C;
+    margin: 0%;
+    padding: 0%;
+    display: grid;
+    grid-template-areas:
+        "encabezado"
+        "contenido"
+        "rodapie";
+    grid-template-columns: auto;
+    grid-template-rows: 55px auto auto;
+    overflow-x: hidden;
+}
+
+.encabezado {
+    grid-area: encabezado;
+    background: #14181C;
+    block-size: auto;
+}
+
+.encabezado img {
+    margin: .5%;
+}
+
+
+.contenido {
+    grid-area: contenido;
+}
+
+.rodapie {
+    grid-area: rodapie;
+    font-family: letterb;
+    color: #4c565f;
+    text-align: center;
+    margin-top: -1%;
+    margin-bottom: 1%;
+}
